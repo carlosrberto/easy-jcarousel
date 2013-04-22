@@ -37,7 +37,7 @@
 			if ( this.options.vertical ) {
 				visibleItens = this.$carousel.height()/this.itemHeight;
 			} else {
-				visibleItens = this.$carousel.width()/this.itemWidth;
+				visibleItens = Math.ceil( this.$carousel.width()/this.itemWidth );
 			}
 
 			if ( visibleItens <= totalItens ) {
