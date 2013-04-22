@@ -8,7 +8,7 @@
 * Licensed under a Creative Commons Attribution 3.0 License
 * http://creativecommons.org/licenses/by-sa/3.0/
 *
-* Version: 0.3
+* Version: 0.3.1
 */
 
 (function() {
@@ -40,7 +40,7 @@
 				visibleItens = this.$carousel.width()/this.itemWidth;
 			}
 
-			if ( visibleItens == totalItens ) {
+			if ( visibleItens <= totalItens ) {
 				this.$carouselNext.addClass('disable');
 			}
 		},
